@@ -12,8 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 we have pre-installed some dependencies tthat you should use
 
-    axios
-    grommet (component library)
+- [Axios][rtl-docs-axios]
+- [Grommet][rtl-docs-grommet]
+- [Styled-components][rtl-docs-styled]
 
 ### Assignment
 
@@ -40,3 +41,8 @@ You will also display the Chosen city: name, temperature, “what it feels like 
 Full response: https://darksky.net/dev/docs#response-format
 
 Extra: Let’s pretend we only get celsius from the endpoint, write a function so that the user can convert the celsius-temperature to fahrenheit. Formula: (0°C × 9/5) + 32 = 32°F
+
+[rtl-docs-grommet]: https://v2.grommet.io/components
+[rtl-docs-styled]: https://www.styled-components.com/docs
+[rtl-docs-axios]: https://github.com/axios/axios
+
