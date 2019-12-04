@@ -24,11 +24,12 @@ You will use the “darkSky” api to fetch the current weather.
 
 ### Wireframe
 
-See [`/src/assets/wireframe.jpg`](/src/images/wireframe.jpg) <br />
+<img src='/src/images/wireframe.jpg' />
 
 Depending on the weather you will display an image that fits the current weather & temperature. <br />
 Response example: clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, partly-cloudy-night
 
+<img src='/src/images/weather-icons.png' />
 
 ### Example
 
