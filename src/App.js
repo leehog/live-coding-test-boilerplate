@@ -39,7 +39,7 @@ function App() {
           options={[
             /* Add locations here */
             /*
-              The select component expects an array of string ex. ['option 1', 'option 2']
+              The select component expects an array of strings ex. ['option 1', 'option 2']
              */
           ]}
           value={location}
