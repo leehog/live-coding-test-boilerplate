@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { Select } from 'grommet'
 import { Text } from 'grommet'
 import WeatherBox from './weatherBox'
-import { getWeather } from './api'
-import { coordinates } from './coordinates'
 
 const locations = ['Stockholm']
 
@@ -30,8 +28,6 @@ function App() {
     setLocation(city)
   }
 
-  getWeather(coordinates['new-york'])
-  
   return (
     <Container>
       <LocationWrapper>
