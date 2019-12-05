@@ -2,28 +2,36 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Select } from 'grommet'
 import { Text } from 'grommet'
+import WeatherBox from './weatherBox'
+import { getWeather } from './api'
+import { coordinates } from './coordinates'
 
 const locations = ['Stockholm']
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
 `
 
 const LocationWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 `
+
 function App() {
   const [location, setLocation] = useState('')
 
   const handleChange = (city) => {
     setLocation(city)
-    // Make api request
   }
 
+  getWeather(coordinates['new-york'])
+  
   return (
     <Container>
       <LocationWrapper>
@@ -34,7 +42,9 @@ function App() {
           onChange={({ value }) => handleChange(value)}
         />
       </LocationWrapper>
-      
+      {
+        location && <WeatherBox />
+      }
     </Container>
   )
 }
